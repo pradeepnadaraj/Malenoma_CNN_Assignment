@@ -1,23 +1,26 @@
 # Melonoma CNN Assignment
-> Building a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
 
 
 ## Table of Contents
 * Melanoma-Detection-using-using-custom-cnn
 Table of Contents
-* General Information
-	- Dataset Information
-	- Steps Involved
-	- Results
-	- Baseline Model
-	- Augmented Model
-	- Final Model
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+	- Technology/Tools used
+ 	- Dataset Information
+	- Project pipeline:
+		- Baseline Model
+		- Augmented Model
+		- Final Model
+	- Results/Conclusions
 
-## General Information
-- Problem statement: To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+## Technology/Tools Used
+- tensorflow
+- matplotlib
+- numpy
+- pandas
+- PIL	
+
+## Dataset Information
   - The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
 
 
@@ -63,17 +66,16 @@ The data set contains the following diseases:
   - 
 
 ## Conclusions
-1) Conclusion 1 from the analysis
-	It is early to say overfitting or underfitting, Validation accuracy and Training accuracy follow each other.
-	The training loss is low but validation loss is fluctuating
-2) Conclusion 2 from the analysis
+1) Conclusion from the 1st model analysis:
+	Validation accuracy and Training accuracy follow each other. The training loss is low but validation loss is fluctuating
+2) Conclusion from the 2nd model analysis:
   	The accuracy remains the same as before, But still low accuracy
 	- Which class has the least number of samples?
 		-- seborrheic Keratosis
 	- Which classes dominate the data in terms proportionate number of samples?
 		-- Melanoma and Pigmented benign keratosis actinic keratosis and dermatofibroma
   
-3) Conclusion 3 from the analysis
+3) Conclusion from the final model analysis:
 
 	 Added 500 images to all the classes to maintain some class balance. 
 	- pigmented benign keratosis    962
@@ -91,10 +93,3 @@ The data set contains the following diseases:
 - Training and validation accuracy follow eachother
 - Same pattern can be seen with Training and Validation loss.
 
-
-## Technologies Used
-- tensorflow
-- matplotlib
-- numpy
-- pandas
-- PIL
